@@ -1,0 +1,465 @@
+<style type="text/css">
+
+/* ================================================================
+   GOTHIC INDUSTRIAL CYBER FRIENDPROJECT LAYOUT
+   Transparent boxes with maximum text readability
+   ================================================================ */
+
+/* Main Body Styling */
+body {
+    background-color: #000000;
+    background-image: url('https://i.imgur.com/YOUR_BACKGROUND.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Orbitron', 'Rajdhani', 'Share Tech Mono', 'Courier New', monospace;
+    color: #00e5ff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Reset all default backgrounds to transparent */
+table, tr, td {
+    background-color: transparent !important;
+    border: none;
+}
+
+table table {
+    background-color: transparent !important;
+}
+
+/* Main profile container - Transparent with dark overlay */
+table table table {
+    background: rgba(5, 5, 20, 0.7) !important;
+    border: 2px solid #00e5ff !important;
+    border-radius: 0px;
+    padding: 15px;
+    margin: 10px auto;
+    box-shadow: 
+        0 0 25px rgba(0, 229, 255, 0.5),
+        0 0 50px rgba(138, 43, 226, 0.3),
+        inset 0 0 40px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Keep nested tables transparent */
+table table table table {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
+
+/* Profile name and main headers */
+.nametext, span.nametext {
+    color: #d946ff !important;
+    font-size: 32px !important;
+    font-family: 'Impact', 'Teko', sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 
+        0 0 20px #d946ff,
+        0 0 40px #8a2be2,
+        0 0 60px rgba(217, 70, 255, 0.6),
+        3px 3px 0px #000000;
+    animation: glitch 3s infinite;
+    display: block;
+    padding: 10px 0;
+}
+
+/* All text elements - Electric cyan with glow */
+td, div, p, span, font, li, .text {
+    color: #00e5ff !important;
+    text-shadow: 
+        0 0 10px #00e5ff,
+        0 0 20px rgba(0, 229, 255, 0.7),
+        1px 1px 2px #000000;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* Section headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #d946ff !important;
+    text-shadow: 
+        0 0 15px #d946ff,
+        0 0 30px #8a2be2,
+        0 0 45px rgba(217, 70, 255, 0.5),
+        2px 2px 4px #000000;
+    font-family: 'Impact', 'Teko', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* FriendProject specific text classes */
+.lightbluetext8, .orangetext15, .whitetext12, .btext, .redbtext, .blacktext12 {
+    color: #d946ff !important;
+    text-shadow: 
+        0 0 15px #d946ff,
+        0 0 30px #8a2be2,
+        2px 2px 3px #000000;
+    font-family: 'Impact', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Links - Electric green */
+a, a:link, a:visited, a:active {
+    color: #39ff14 !important;
+    text-decoration: none;
+    text-shadow: 
+        0 0 10px #39ff14,
+        0 0 20px rgba(57, 255, 20, 0.6),
+        1px 1px 2px #000000;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #ff0099 !important;
+    text-shadow: 
+        0 0 15px #ff0099,
+        0 0 30px #ff00ff,
+        0 0 45px rgba(255, 0, 153, 0.7),
+        2px 2px 3px #000000;
+    text-decoration: none;
+}
+
+/* Individual module boxes */
+.module, div.module {
+    background: rgba(10, 5, 30, 0.75) !important;
+    border: 2px solid #8a2be2 !important;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 
+        0 0 20px rgba(138, 43, 226, 0.5),
+        inset 0 0 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+/* About Me, Interests sections */
+.aboutMe, .interests, .details {
+    background: rgba(0, 0, 20, 0.65) !important;
+    border: 2px solid #00aaff;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 8px 0;
+    box-shadow: 
+        0 0 15px rgba(0, 170, 255, 0.4),
+        inset 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Friend space */
+.friendSpace, td.friendSpace {
+    background: rgba(5, 5, 20, 0.7) !important;
+    border: 2px solid #00e5ff !important;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 3px;
+    box-shadow: 
+        0 0 15px rgba(0, 229, 255, 0.4),
+        inset 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Comments box */
+.commentBox, .comments {
+    background: rgba(5, 5, 20, 0.7) !important;
+    border: 2px solid #8a2be2 !important;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 3px;
+    box-shadow: 
+        0 0 15px rgba(138, 43, 226, 0.4),
+        inset 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Contact table */
+.contactTable, table.contactTable {
+    background: rgba(10, 5, 25, 0.8) !important;
+    border: 2px solid #d946ff !important;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 
+        0 0 25px rgba(217, 70, 255, 0.5),
+        inset 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Extended Network */
+.extendedNetwork {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Input fields and forms */
+input, textarea, select {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    border: 2px solid #00e5ff !important;
+    color: #00e5ff !important;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    box-shadow: 
+        0 0 12px rgba(0, 229, 255, 0.4),
+        inset 0 0 15px rgba(0, 0, 0, 0.6);
+    outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #d946ff !important;
+    box-shadow: 
+        0 0 20px rgba(217, 70, 255, 0.7),
+        inset 0 0 15px rgba(0, 0, 0, 0.6);
+    color: #d946ff !important;
+}
+
+/* Buttons */
+button, input[type="button"], input[type="submit"] {
+    background: linear-gradient(135deg, #8a2be2, #d946ff) !important;
+    border: 2px solid #d946ff !important;
+    color: #ffffff !important;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(217, 70, 255, 0.6);
+    transition: all 0.3s ease;
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+    background: linear-gradient(135deg, #d946ff, #ff0099) !important;
+    box-shadow: 0 0 30px rgba(255, 0, 153, 0.8);
+    transform: scale(1.05);
+}
+
+/* Images */
+img {
+    border: 2px solid #8a2be2;
+    border-radius: 3px;
+    box-shadow: 
+        0 0 15px rgba(138, 43, 226, 0.6),
+        0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    height: auto;
+}
+
+img:hover {
+    border-color: #d946ff;
+    box-shadow: 
+        0 0 25px rgba(217, 70, 255, 0.8),
+        0 4px 12px rgba(0, 0, 0, 0.7);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+/* Profile picture */
+.profilePic, img.profilePic {
+    border: 3px solid #00e5ff !important;
+    box-shadow: 
+        0 0 30px rgba(0, 229, 255, 0.7),
+        0 0 60px rgba(138, 43, 226, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+    background: #000000;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, #0a0a14 0%, #000000 100%);
+    border: 1px solid #00e5ff;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #8a2be2 0%, #00e5ff 50%, #8a2be2 100%);
+    border: 2px solid #00e5ff;
+    border-radius: 4px;
+    box-shadow: 
+        0 0 15px #00e5ff,
+        inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #d946ff 0%, #39ff14 50%, #d946ff 100%);
+    box-shadow: 
+        0 0 25px #d946ff,
+        inset 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Glitch animation for headers */
+@keyframes glitch {
+    0% { 
+        text-shadow: 
+            3px 0 0 #ff0099, 
+            -3px 0 0 #00e5ff,
+            0 0 15px #d946ff,
+            0 0 30px #8a2be2;
+    }
+    14% { 
+        text-shadow: 
+            3px 0 0 #ff0099, 
+            -3px 0 0 #00e5ff,
+            0 0 15px #d946ff,
+            0 0 30px #8a2be2;
+    }
+    15% { 
+        text-shadow: 
+            -3px 0 0 #00e5ff, 
+            3px 0 0 #ff0099,
+            0 0 20px #d946ff,
+            0 0 40px #8a2be2;
+    }
+    49% { 
+        text-shadow: 
+            -3px 0 0 #00e5ff, 
+            3px 0 0 #ff0099,
+            0 0 20px #d946ff,
+            0 0 40px #8a2be2;
+    }
+    50% { 
+        text-shadow: 
+            3px 0 0 #39ff14, 
+            -3px 0 0 #ff0099,
+            0 0 25px #d946ff,
+            0 0 50px #8a2be2;
+    }
+    99% { 
+        text-shadow: 
+            3px 0 0 #39ff14, 
+            -3px 0 0 #ff0099,
+            0 0 25px #d946ff,
+            0 0 50px #8a2be2;
+    }
+    100% { 
+        text-shadow: 
+            3px 0 0 #ff0099, 
+            -3px 0 0 #00e5ff,
+            0 0 15px #d946ff,
+            0 0 30px #8a2be2;
+    }
+}
+
+/* Apply glitch to main headers */
+h1, .nametext, .lightbluetext8 {
+    animation: glitch 4s infinite;
+}
+
+/* Pulse glow animation for borders */
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 
+            0 0 20px rgba(0, 229, 255, 0.4),
+            0 0 40px rgba(138, 43, 226, 0.3),
+            inset 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 
+            0 0 30px rgba(0, 229, 255, 0.6),
+            0 0 60px rgba(138, 43, 226, 0.5),
+            inset 0 0 40px rgba(0, 0, 0, 0.6);
+    }
+    100% {
+        box-shadow: 
+            0 0 20px rgba(0, 229, 255, 0.4),
+            0 0 40px rgba(138, 43, 226, 0.3),
+            inset 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+}
+
+table table table {
+    animation: pulseGlow 3s infinite;
+}
+
+/* Horizontal rules */
+hr {
+    border: none;
+    border-top: 2px solid #00e5ff;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+    margin: 15px 0;
+}
+
+/* Blockquotes */
+blockquote {
+    background: rgba(0, 0, 20, 0.6) !important;
+    border-left: 4px solid #d946ff;
+    padding: 10px 15px;
+    margin: 10px 0;
+    font-style: italic;
+    box-shadow: 
+        0 0 15px rgba(217, 70, 255, 0.3),
+        inset 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Lists */
+ul, ol {
+    color: #00e5ff !important;
+}
+
+li {
+    margin: 5px 0;
+    text-shadow: 
+        0 0 8px #00e5ff,
+        1px 1px 2px #000000;
+}
+
+/* Code blocks */
+code, pre {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border: 1px solid #00e5ff;
+    color: #39ff14 !important;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    box-shadow: 
+        0 0 10px rgba(0, 229, 255, 0.3),
+        inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Status/Online indicators */
+.online, .offline {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.online {
+    color: #39ff14 !important;
+    text-shadow: 0 0 15px #39ff14;
+}
+
+.offline {
+    color: #ff0099 !important;
+    text-shadow: 0 0 15px #ff0099;
+}
+
+/* Video/embedded content */
+embed, object, iframe {
+    border: 2px solid #8a2be2;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+    max-width: 100%;
+}
+
+/* Selection highlight */
+::selection {
+    background: #d946ff;
+    color: #000000;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #d946ff;
+    color: #000000;
+    text-shadow: none;
+}
+
+</style>
